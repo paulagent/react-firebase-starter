@@ -76,7 +76,7 @@ class Toolbar extends React.Component<{}, {}> {
       <AppBar color="default" position="static">
         <MuiToolbar>
           <Title type="title" color="inherit" onClick={goHome}>
-            My App
+            Wing Chun Victoria
           </Title>
           {this.props.user && (
             <React.Fragment>

@@ -76,33 +76,27 @@ class Toolbar extends React.Component<{}, {}> {
       <AppBar color="default" position="static">
         <MuiToolbar>
           <Title type="title" color="inherit" onClick={goHome}>
-            Wing Chun Victoria
+            Wing Chun Victoria, BC, CA
           </Title>
-          {this.props.user && (
-            <React.Fragment>
-              <IconButton onClick={this.handleAccountMenuOpen}>
-                <Avatar src={this.props.user.photoURL} />
-              </IconButton>
-              <Menu
-                anchorEl={this.state.accountMenuAnchor}
-                open={accountMenuOpen}
-                onClose={this.handleAccountMenuClose}
-              >
-                <MenuItem onClick={this.goToAccount}>My Account</MenuItem>
-                <MenuItem onClick={auth.signOut}>Sign Out</MenuItem>
-              </Menu>
-            </React.Fragment>
-          )}
-          {this.props.user === null && (
+          {
             <React.Fragment>
               <Button color="inherit" href="/about" onClick={Link.handleClick}>
-                About Us
+                WELCOME
+              </Button>
+              <Button color="inherit" href="/about" onClick={Link.handleClick}>
+                ABOUT THE CLUB
+              </Button>
+              <Button color="inherit" href="/about" onClick={Link.handleClick}>
+                PICTURES AND VIDEOS
               </Button>
               <Button color="inherit" onClick={auth.showLoginDialog}>
-                Sign In
+                CLASSES
+              </Button>
+              <Button color="inherit" onClick={auth.showLoginDialog}>
+                CONTACT US
               </Button>
             </React.Fragment>
-          )}
+          }
         </MuiToolbar>
         <LoginDialog
           open={this.state.loginDialogOpen}

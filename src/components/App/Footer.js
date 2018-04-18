@@ -44,8 +44,10 @@ class Footer extends React.Component<{}> {
   render() {
     return (
       <Container>
-        <Copyright css="padding-right: 0.5em">&copy; 2015-present</Copyright>
-        <ExtLink href="https://github.com/kriasoft">Kriasoft</ExtLink>
+        <Copyright css="padding-right: 0.5em">&copy; 2018-present</Copyright>
+        <ExtLink href="https://github.com/chenfeifei">
+          Wing Chun Victoria, BC, CA
+        </ExtLink>
         <Separator>|</Separator>
         <ExtLink href="/privacy">Privacy Policy</ExtLink>
       </Container>

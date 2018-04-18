@@ -12,7 +12,8 @@ import Card from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 
 const Container = styled.div`
-  max-width: 600px;
+  max-width: 1800px;
+  max-height: 1000px;
   box-sizing: border-box;
   margin: 0 auto;
 `;

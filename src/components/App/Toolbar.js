@@ -76,23 +76,43 @@ class Toolbar extends React.Component<{}, {}> {
       <AppBar color="default" position="static">
         <MuiToolbar>
           <Title type="title" color="inherit" onClick={goHome}>
-            Wing Chun Victoria, BC, CA
+            <div>
+              <img
+                src="/pictures/clubLogo.JPG"
+                alt="club_logo"
+                height="150"
+                width="150"
+              />
+              <span valign="center">Wing Chun Victoria, BC, CA</span>
+            </div>
           </Title>
           {
             <React.Fragment>
-              <Button color="inherit" href="/about" onClick={Link.handleClick}>
+              <Button color="inherit" href="/" onClick={Link.handleClick}>
                 WELCOME
               </Button>
               <Button color="inherit" href="/about" onClick={Link.handleClick}>
                 ABOUT THE CLUB
               </Button>
-              <Button color="inherit" href="/about" onClick={Link.handleClick}>
+              <Button
+                color="inherit"
+                href="/picturesAndVideos"
+                onClick={Link.handleClick}
+              >
                 PICTURES AND VIDEOS
               </Button>
-              <Button color="inherit" onClick={auth.showLoginDialog}>
+              <Button
+                color="inherit"
+                href="/classes"
+                onClick={Link.handleClick}
+              >
                 CLASSES
               </Button>
-              <Button color="inherit" onClick={auth.showLoginDialog}>
+              <Button
+                color="inherit"
+                href="/contact"
+                onClick={Link.handleClick}
+              >
                 CONTACT US
               </Button>
             </React.Fragment>

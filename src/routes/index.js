@@ -39,11 +39,29 @@ const routes = [
     }),
   },
   {
-    path: '/privacy',
-    components: () => [import(/* webpackChunkName: 'privacy' */ './Privacy')],
-    render: ({ user, components: [Privacy] }) => ({
-      title: 'Privacy Policy • React Firebase Starter',
-      body: <Privacy user={user} />,
+    path: '/picturesAndVideos',
+    components: () => [
+      import(/* webpackChunkName: 'picturesAndVideos' */ './PicturesAndVideos'),
+    ],
+    render: ({ user, components: [PicturesAndVideos] }) => ({
+      title: 'Pictures and Videos',
+      body: <PicturesAndVideos />,
+    }),
+  },
+  {
+    path: '/classes',
+    components: () => [import(/* webpackChunkName: 'classes' */ './Classes')],
+    render: ({ user, components: [Classes] }) => ({
+      title: 'Classes',
+      body: <Classes />,
+    }),
+  },
+  {
+    path: '/contact',
+    components: () => [import(/* webpackChunkName: 'contact' */ './Contact')],
+    render: ({ user, components: [Contact] }) => ({
+      title: 'Contact',
+      body: <Contact />,
     }),
   },
 ];

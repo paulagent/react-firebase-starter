@@ -22,22 +22,16 @@ const Content = styled(Card)`
   margin: 2em 0;
 `;
 
-class Home extends React.Component<{}> {
+class Classes extends React.Component<{}> {
   render() {
     return (
       <Container>
         <Content>
           <Typography type="headline" gutterBottom>
-            <img
-              src="/pictures/wing_chun_chinese_characters.gif"
-              alt="wing chun chinese characters"
-            />
+            <strong>Here comes the class information</strong>
           </Typography>
           <Typography type="body1" paragraph>
-            Wing Chun is a 300 year old Chinese Martial Art and is currently the
-            most popular Kung Fu art in the world; due in part to the late Bruce
-            Lee & Ip Man movies. It is a street survival art that is simple,
-            quick, effective and economical.
+            Classes
           </Typography>
         </Content>
       </Container>
@@ -45,4 +39,4 @@ class Home extends React.Component<{}> {
   }
 }
 
-export default Home;
+export default Classes;

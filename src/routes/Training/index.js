@@ -6,4 +6,4 @@
 
 /* @flow */
 
-export { default } from './PicturesAndVideos';
+export { default } from './Training';

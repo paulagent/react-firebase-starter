@@ -22,7 +22,7 @@ const Content = styled(Card)`
   margin: 2em 0;
 `;
 
-class Questions extends React.Component<{}> {
+class Blog extends React.Component<{}> {
   render() {
     return (
       <Container>
@@ -200,4 +200,4 @@ class Questions extends React.Component<{}> {
   }
 }
 
-export default Questions;
+export default Blog;

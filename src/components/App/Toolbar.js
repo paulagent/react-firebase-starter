@@ -95,10 +95,10 @@ class Toolbar extends React.Component<{}, {}> {
               </Button>
               <Button
                 color="inherit"
-                href="/picturesAndVideos"
+                href="/training"
                 onClick={Link.handleClick}
               >
-                PICTURES AND VIDEOS
+                Online Training
               </Button>
               <Button
                 color="inherit"
@@ -109,10 +109,10 @@ class Toolbar extends React.Component<{}, {}> {
               </Button>
               <Button
                 color="inherit"
-                href="/questions"
+                href="/blog"
                 onClick={Link.handleClick}
               >
-                Questions
+                Blog
               </Button>
               <Button
                 color="inherit"
@@ -121,6 +121,12 @@ class Toolbar extends React.Component<{}, {}> {
               >
                 CONTACT US
               </Button>
+
+              <a href="https://www.facebook.com/UVICWINGCHUN" 
+                  target="_blank">
+                  <img src="/pictures/facebook.svg" alt="Facebook"style={{height:25, width:25}}/>
+              </a>
+
             </React.Fragment>
           }
         </MuiToolbar>

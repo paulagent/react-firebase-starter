@@ -39,13 +39,13 @@ const routes = [
     }),
   },
   {
-    path: '/picturesAndVideos',
+    path: '/training',
     components: () => [
-      import(/* webpackChunkName: 'picturesAndVideos' */ './PicturesAndVideos'),
+      import(/* webpackChunkName: 'training' */ './Training'),
     ],
-    render: ({ user, components: [PicturesAndVideos] }) => ({
-      title: 'Pictures and Videos',
-      body: <PicturesAndVideos />,
+    render: ({ user, components: [Training] }) => ({
+      title: 'Online Training',
+      body: <Training />,
     }),
   },
   {
@@ -57,11 +57,11 @@ const routes = [
     }),
   },
   {
-    path: '/questions',
-    components: () => [import(/* webpackChunkName: 'classes' */ './Questions')],
-    render: ({ user, components: [Questions] }) => ({
-      title: 'Questions',
-      body: <Questions />,
+    path: '/blog',
+    components: () => [import(/* webpackChunkName: 'blog' */ './Blog')],
+    render: ({ user, components: [Blog] }) => ({
+      title: 'Blog',
+      body: <Blog />,
     }),
   },
   {

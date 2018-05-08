@@ -6,4 +6,4 @@
 
 /* @flow */
 
-export { default } from './Questions';
+export { default } from './Blog';

@@ -22,28 +22,23 @@ const Content = styled(Card)`
   margin: 2em 0;
 `;
 
-class PicturesAndVideos extends React.Component<{}> {
+class Training extends React.Component<{}> {
   render() {
     return (
       <Container>
         <Content>
           <Typography type="headline" gutterBottom>
-            <strong>Here are the pictures and classes information</strong>
-          </Typography>
-          <Typography type="body1" paragraph>
-            Pictures
-          </Typography>
+            <strong>Our Training Philosophy</strong>
+          </Typography>        
 
           <Typography type="body1" paragraph>
-            Videos
+            Videos (first form, second form, third form, dummy)
           </Typography>
-          <Typography type="body1" paragraph>
-            Arcticles
-          </Typography>
+         
         </Content>
       </Container>
     );
   }
 }
 
-export default PicturesAndVideos;
+export default Training;

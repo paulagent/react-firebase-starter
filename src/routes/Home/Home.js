@@ -27,19 +27,21 @@ class Home extends React.Component<{}> {
     return (
       <Container>
         <Content>
-          <img
-            vertical-align="top"
-            width="40%"
-            align="middle"
-            src="/pictures/wing_chun_chinese_characters.gif"
-            alt="WING CHUN KUNG FU"
-          />
           <Typography type="body1" paragraph>
-            Wing Chun is a 300 year old Chinese Martial Art and is currently the
+            <strong>Wing Chun</strong> is a 300 year old Chinese Martial Art and is currently the
             most popular Kung Fu art in the world; due in part to the late Bruce
             Lee & Ip Man movies. It is a street survival art that is simple,
             quick, effective and economical.
           </Typography>
+          <img
+            src="/pictures/sticking_hands_bruce_lee_and_ip_man.jpg"
+            alt="Sticking Hands Bruce Lee and Ip Man"
+            style={{alignItems: "center", width: 400, height: 300, justifyContent: "center", alignSelf: "center"}}
+          />
+          <Typography type="body1" paragraph>
+            The movement in the picture is known as "Sticking Hands". This technique requires keeping in constant contact with your opponent's arms, through multiple short-range movements, to deflect attacks with hard, straight and fast strikes. 
+          </Typography>
+
         </Content>
       </Container>
     );

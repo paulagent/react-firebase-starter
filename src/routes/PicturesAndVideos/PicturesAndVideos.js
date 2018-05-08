@@ -35,7 +35,10 @@ class PicturesAndVideos extends React.Component<{}> {
           </Typography>
 
           <Typography type="body1" paragraph>
-            Classes
+            Videos
+          </Typography>
+          <Typography type="body1" paragraph>
+            Arcticles
           </Typography>
         </Content>
       </Container>

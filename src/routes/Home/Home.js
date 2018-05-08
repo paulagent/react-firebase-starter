@@ -12,7 +12,7 @@ import Card from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 
 const Container = styled.div`
-  max-width: 1800px;
+  max-width: 1000px;
   box-sizing: border-box;
   margin: 0 auto;
 `;
@@ -27,12 +27,13 @@ class Home extends React.Component<{}> {
     return (
       <Container>
         <Content>
-          <Typography type="headline" gutterBottom>
-            <img
-              src="/pictures/wing_chun_chinese_characters.gif"
-              alt="wing chun chinese characters"
-            />
-          </Typography>
+          <img
+            vertical-align="top"
+            width="40%"
+            align="middle"
+            src="/pictures/wing_chun_chinese_characters.gif"
+            alt="WING CHUN KUNG FU"
+          />
           <Typography type="body1" paragraph>
             Wing Chun is a 300 year old Chinese Martial Art and is currently the
             most popular Kung Fu art in the world; due in part to the late Bruce

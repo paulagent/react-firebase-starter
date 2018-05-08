@@ -24,7 +24,7 @@ import LoginDialog from './LoginDialog';
 const Title = styled(Typography)`
   && {
     flex: 1;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
   }
 `;
@@ -73,23 +73,22 @@ class Toolbar extends React.Component<{}, {}> {
     const accountMenuOpen = Boolean(this.state.accountMenuAnchor);
 
     return (
-      <AppBar color="default" position="static">
+      <AppBar color="black" position="static">
         <MuiToolbar>
           <Title type="title" color="inherit" onClick={goHome}>
             <div>
               <img
                 src="/pictures/clubLogo.JPG"
                 alt="club_logo"
-                height="150"
-                width="150"
+                height="120"
+                width="120"
               />
-              <span valign="center">Wing Chun Victoria, BC, CA</span>
             </div>
           </Title>
           {
             <React.Fragment>
               <Button color="inherit" href="/" onClick={Link.handleClick}>
-                WELCOME
+                <span className="mui--text-center">WELCOME</span>
               </Button>
               <Button color="inherit" href="/about" onClick={Link.handleClick}>
                 ABOUT THE CLUB
@@ -107,6 +106,13 @@ class Toolbar extends React.Component<{}, {}> {
                 onClick={Link.handleClick}
               >
                 CLASSES
+              </Button>
+              <Button
+                color="inherit"
+                href="/questions"
+                onClick={Link.handleClick}
+              >
+                Questions
               </Button>
               <Button
                 color="inherit"

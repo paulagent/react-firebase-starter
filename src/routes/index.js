@@ -57,6 +57,14 @@ const routes = [
     }),
   },
   {
+    path: '/questions',
+    components: () => [import(/* webpackChunkName: 'classes' */ './Questions')],
+    render: ({ user, components: [Questions] }) => ({
+      title: 'Questions',
+      body: <Questions />,
+    }),
+  },
+  {
     path: '/contact',
     components: () => [import(/* webpackChunkName: 'contact' */ './Contact')],
     render: ({ user, components: [Contact] }) => ({
